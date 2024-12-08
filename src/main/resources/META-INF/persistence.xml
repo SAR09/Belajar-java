@@ -1,0 +1,45 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+             http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+             version="2.1">
+
+    <persistence-unit name="BELAJAR">
+
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <!-- Entity Classes -->
+        <class>programmermuda.jpa.entity.Customer</class>
+        <class>programmermuda.jpa.entity.Category</class>
+        <class>programmermuda.jpa.entity.Image</class>
+        <class>programmermuda.jpa.entity.Member</class>
+        <class>programmermuda.jpa.entity.Department</class>
+        <class>programmermuda.jpa.entity.User</class>
+        <class>programmermuda.jpa.entity.Credential</class>
+        <class>programmermuda.jpa.entity.Wallet</class>
+        <class>programmermuda.jpa.entity.Brand</class>
+        <class>programmermuda.jpa.entity.Product</class>
+        <class>programmermuda.jpa.entity.Employee</class>
+        <class>programmermuda.jpa.entity.Manager</class>
+        <class>programmermuda.jpa.entity.VicePresident</class>
+        <class>programmermuda.jpa.entity.Payment</class>
+        <class>programmermuda.jpa.entity.PaymentCreditCard</class>
+        <class>programmermuda.jpa.entity.PaymentGopay</class>
+        <class>programmermuda.jpa.entity.Transaction</class>
+        <class>programmermuda.jpa.entity.TransactionCredit</class>
+        <class>programmermuda.jpa.entity.TransactionDebit</class>
+        <class>programmermuda.jpa.entity.AuditableEntity</class>
+
+
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="jakarta.persistence.jdbc.url"
+                      value="jdbc:mysql://localhost:3306/belajar_java_persistance_api"/>
+            <property name="jakarta.persistence.jdbc.user" value="root"/>
+            <property name="jakarta.persistence.jdbc.password" value="Mysqlsaiful09"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+
+</persistence>
